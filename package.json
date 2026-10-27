@@ -1,8 +1,8 @@
 {
-  "name": "conga-clash",
+  "name": "morale-arcade",
   "version": "1.0.0",
   "private": true,
-  "description": "Real-time multiplayer conga line arena game",
+  "description": "Real-time multiplayer tap-only party game hosted by DJ Disco",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
