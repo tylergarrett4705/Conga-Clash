@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="theme-color" content="#18113b"><title>Conga Clash</title><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/extra.css"></head>
+<body>
+  <main id="home" class="screen home">
+    <button id="mute" class="icon-btn" aria-label="Mute sound">🔊</button>
+    <section class="hero"><div class="eyebrow">THE ULTIMATE DANCE FLOOR SHOWDOWN</div><h1><span>CONGA</span> CLASH</h1><p>Grow your line. Dodge the crowd. Rule the dance floor.</p></section>
+    <section class="card setup"><label>YOUR DANCE NAME<input id="name" maxlength="14" placeholder="FunkyFresh"></label><div><span class="label">PICK YOUR DANCER</span><div id="emojiPicker" class="emoji-picker"></div></div><div><span class="label">YOUR LOOK <small id="movesBalance"></small></span><div id="outfitPicker" class="emoji-picker"></div></div>
+      <button id="create" class="primary">CREATE ROOM</button><button id="practice" class="secondary">🤖 PRACTICE VS BOTS</button>
+      <div class="or"><span>OR JOIN THE PARTY</span></div><div class="join-row"><input id="roomCode" maxlength="4" placeholder="CODE"><button id="join">JOIN</button></div>
+    </section>
+    <section class="home-grid"><div><div class="stat-card"><small>DANCE MARATHON</small><strong id="marathon">0</strong><span>dancers recruited worldwide</span></div><div class="stat-card challenge"><small>DAILY CHALLENGE</small><strong id="challengeTitle">Loading...</strong><span id="challengeProgress"></span></div></div><div class="rooms-card"><div class="section-title">OPEN DANCE FLOORS <button id="refresh">↻</button></div><div id="rooms">Looking for parties...</div><div class="section-title board-title">ALL-TIME LONGEST LINES</div><div id="globalBoard"></div></div></section>
+  </main>
+  <main id="lobby" class="screen hidden"><section class="lobby-card"><div class="eyebrow">YOUR ROOM CODE</div><h2 id="code">ABCD</h2><button id="copy">COPY INVITE</button><h3>DANCERS</h3><div id="players" class="player-grid"></div><button id="start" class="primary">START THE MUSIC</button><p id="hostNote">Waiting for the host...</p></section></main>
+  <main id="game" class="screen game hidden"><canvas id="arena"></canvas><div class="hud top"><div id="timer">2:00</div><div id="leaderboard"></div><button id="gameMute" class="icon-btn">🔊</button></div><canvas id="minimap" width="180" height="110"></canvas><div id="powerStatus"></div><button id="shimmy"><span>⚡ SHIMMY</span><small>HOLD TO BOOST</small><i></i></button><div id="countdown"></div><div id="toast"></div></main>
+  <main id="results" class="screen hidden"><section class="results-card"><div class="eyebrow">DANCE FLOOR CHAMPIONS</div><h2>RESULTS</h2><div id="podium" class="podium"></div><div id="awards" class="awards"></div><div id="movesEarned"></div><button id="again" class="primary">PLAY AGAIN</button></section><div class="confetti"></div></main>
+  <div id="error" class="error hidden"></div>
+  <section id="tutorial" class="tutorial hidden"><div class="tutorial-card"><div id="tutorialIcon">💃</div><div class="eyebrow" id="tutorialStep">STEP 1 OF 3</div><h2 id="tutorialTitle">COLLECT</h2><p id="tutorialText">Grab loose dancers to grow your line.</p><button id="tutorialNext" class="primary">NEXT</button><button id="tutorialSkip">SKIP</button></div></section>
+  <script src="/app.js"></script>
+</body></html>
