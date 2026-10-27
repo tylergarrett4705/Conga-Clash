@@ -36,3 +36,9 @@ The application is a single Node service. Deploy the repository to any Node-comp
 - Local Moves point storage and a global dance counter
 
 Global statistics currently use in-memory server storage. Connect a durable database before operating multiple server instances or requiring records to survive deployments.
+
+## One-click public deployment
+
+[Deploy Conga Clash on Render](https://dashboard.render.com/blueprint/new?repo=https%3A%2F%2Fgithub.com%2Ftylergarrett4705%2FConga-Clash)
+
+The included Blueprint creates a free Node web service with WebSocket support and health checks. Free services may sleep when inactive, and their filesystem is ephemeral, so global records can reset after a restart. The game itself and room state work normally while the service is running.
